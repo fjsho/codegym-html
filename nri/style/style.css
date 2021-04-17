@@ -14,26 +14,60 @@ body{
 
 }
 a{
-  text-decoration:none ;
-
+  text-decoration: none;
 }
+
 img{
   max-width: 100%;
-
 }
+
 .wrapper{
   margin: 0 auto;
   max-width: 1440px;
-  padding:0 10px;
 }
 
-.share-button{
-  font-size: 0.5rem;
+.share-button,
+.share-button ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+.share-button span{
+  font-size: 0.75rem;
+}
+
+.share-button li{
+  list-style-type: none;
+  padding: 4px;
+}
+
 .share-button img{
-  width: 24px;
-  height: 24px ;
+  width: 20px;
+  height: 20px;
 }
+
+/* ボタン */
+.button{
+  display: block;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  width: 300px;
+  height: 56px;
+  margin: 56px auto;
+  padding: 4px;
+}
+.button:hover{
+  opacity: 0.5;
+}
+.button img{
+  width:1rem;
+  height:1rem;
+  margin-left: 10px;
+}
+
 
 /* HEADER 
 ------------------------*/
@@ -96,15 +130,6 @@ img{
 }
 
 
-/* ボタン */
-.button{
-  background-color: blue;
-  color: white;
-  text-align: center;
-}
-.button:hover{
-  opacity: 0.5;
-}
 
 /* sub-content */
 .sub-content{
