@@ -74,28 +74,40 @@ img{
 
 /* page-header */
 .page-header{
+  margin: 12px 0 16px 16px;
+}
+.page-header,
+.page-header ul{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 4px;
-  margin-bottom: 16px;
 }
 
+.page-header div{
+  min-width: 20%;
+  margin-right: 10%;
+}
 /* main-nav */
 .main-nav li{
-  list-style-type: none;
   font-weight: bold;
+  list-style-type: none;
 }
 .main-nav li:hover{
   color: blue;
   border-bottom:2px  blue solid;
 }
 
-
 /* sub-nav */
+.sub-nav{
+  min-width: 112px;
+}
+.sub-nav li{
+  list-style: none;
+  margin-left:5px;
+}
 .sub-nav img{
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height:32px;
 }
 .sub-nav img:hover{
   opacity: 0.5;
@@ -186,3 +198,8 @@ img{
 }
 
 
+@media(max-width:600px){
+  .main-nav{
+    display: none;
+  }
+}
