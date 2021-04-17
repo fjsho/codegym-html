@@ -1,25 +1,38 @@
-@charset "utf-8"
+@charset "utf-8";
 
 /* 共通部分 
 ----------------------*/
 html{
-
+  font-size: 100%;
+  background-color: white;
 }
+
 body{
+  /* font-family: ; */
+  line-height: 1.7;
+  color: black ;
 
 }
 a{
+  text-decoration:none ;
 
 }
 img{
+  max-width: 100%;
 
 }
 .wrapper{
-
+  margin: 0 auto;
+  max-width: 1440px;
+  padding:0 10px;
 }
 
 .share-button{
-
+  font-size: 0.5rem;
+}
+.share-button img{
+  width: 24px;
+  height: 24px ;
 }
 
 /* HEADER 
@@ -27,46 +40,92 @@ img{
 
 /* page-header */
 .page-header{
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4px;
+  margin-bottom: 16px;
 }
 
 /* main-nav */
+.main-nav li{
+  list-style-type: none;
+  font-weight: bold;
+}
+.main-nav li:hover{
+  color: blue;
+  border-bottom:2px  blue solid;
+}
 
 
 /* sub-nav */
-
+.sub-nav img{
+  width: 24px;
+  height: 24px;
+}
+.sub-nav img:hover{
+  opacity: 0.5;
+}
 
 /* MAIN
 -------------------------*/
 
 /* breadcrumb */
 .breadcrumb{
-
+  font-size: 0.5rem;
+  color: gray;
 }
 
 /* page-title */
-.page-title{
-
+/* .page-title{} */
+.page-title p h1{
+  color: white;
 }
 
 /* main-content */
 .main-content{
+  margin: 0 auto;
+  max-width:600px;
+}
+.main-content h2:before{
+  content: url(../images/square.png)
 
 }
+.main-content img{
+  size: cover;
+}
+
 
 /* ボタン */
 .button{
-
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+.button:hover{
+  opacity: 0.5;
 }
 
 /* sub-content */
 .sub-content{
-
+  background-color: turquoise;
+  padding: 16px;
+}
+.sub-content ul{
+  display: grid;
+  gap: 8px;
+}
+.sub-content li{
+  border: 1px gray solid;
+  background-color: white;
 }
 
 /* sub-menu */
 .sub-menu{
-
+  border-top:2px black solid;
+}
+.sub-menu h2 ul{
+  border-bottom:1px gray solid;
 }
 
 
@@ -75,17 +134,30 @@ img{
 
 /* follow */
 .follow{
-
+  border-top:2px black solid;
+  border-bottom:2px black solid ;
+}
+.follow img{
+  width: 36px;
+  height: 36px;
 }
 
 /* sitemap */
-.sitemap {
-
+.sitemap{
+  display: grid;
+  
 }
 
 /* privacy */
 .privacy{
-
+  display: flex;
+  flex-direction: row;
+}
+.privacy li{
+  border-right: 1px gray solid;
+}
+.privacy ul{
+  border: none;
 }
 
 
