@@ -200,9 +200,27 @@ main li{
 /* sub-menu */
 .sub-menu{
   border-top:2px black solid;
+  padding-bottom: 24px;
 }
-.sub-menu h2 ul{
+.sub-menu h2{
+  padding: 24px 0;
+  border-bottom: 1px gray solid;
+}
+.sub-menu div{
   border-bottom:1px gray solid;
+  margin-top: 32px;
+}
+.sub-menu ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.sub-menu li{
+  margin:10px;
+  padding:10px;
+}
+.sub-menu li a:before{
+  content:">　";
+  font-size: 0.5rem;
 }
 
 
