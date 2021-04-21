@@ -3,7 +3,7 @@
 /* 共通部分 
 ----------------------*/
 html{
-  font-size: 80%;
+  font-size: 100%;
   background-color: white;
 }
 
@@ -102,15 +102,16 @@ img{
 }
 
 .page-header div{
-  min-width: 20%;
+  min-width: 12%;
   margin-right: 8%;
 }
 /* main-nav */
 .main-nav li{
   font-weight: bold;
   list-style-type: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin:auto 10px ;
+  align-items: center;
 }
 .main-nav li:hover{
   color: blue;
@@ -123,11 +124,13 @@ img{
 }
 .sub-nav li{
   list-style: none;
-  margin-left:5px;
+  margin:0 5px;
+  vertical-align: middle;
+  padding-top: 8px;
 }
 .sub-nav img{
-  width: 36px;
-  height:32px;
+  width: 40px;
+  height:28px;
 }
 .sub-nav img:hover{
   opacity: 0.5;
@@ -145,6 +148,7 @@ main a{
 /* breadcrumb */
 .breadcrumb{
   margin-left: 5%;
+  padding-top: 100px;
 }
 
 .breadcrumb,
@@ -162,7 +166,10 @@ main a{
   background-image: url(../images/h1_whats_2.jpg);
   background-size: cover;
   margin: 10px 0;
-  padding: 28px 0 0 24px;
+  padding: 28px 0 0 6%;
+}
+.page-title h1{
+  font-size: 1.5rem;
 }
 .page-title p,
 .page-title h1{
@@ -172,12 +179,11 @@ main a{
 /* main-content */
 .main-content{
   margin: 0 auto;
-  max-width:600px;
+  max-width:850px;
 }
 .main-content h2{
   background-image: url(../images/square.png);
   background-size:30px ;
-  background-position: left middle;
   padding-left:40px ;
   margin:10px 0 ;  
 }
@@ -185,10 +191,6 @@ main a{
   margin: 10px 0;
   font-size: 1rem;
 }
-.main-content img{
-  size: cover;
-}
-
 /* sub-content */
 .sub-content{
   background-color: rgb(171, 202, 238);
@@ -204,13 +206,15 @@ main a{
   border: 1px gray solid;
   background-color: white;
   text-align: center;
+  padding:16px 20px
 }
 .sub-content li:hover{
   background-color: rgb(197, 194, 194);  
 }
 .sub-content li a{
-  display: block;
-  padding:10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* sub-menu */
@@ -301,7 +305,7 @@ footer{
 }
 /* privacy */
 .privacy{
-  margin: 56px autp;
+  margin: 56px auto;
 }
 .privacy ul{
   display: flex;
@@ -319,9 +323,9 @@ footer p{
   margin-left: auto;
 
 }
-
+/* 
 @media(max-width:600px){
   .main-nav{
     display: none;
   }
-}
+} */
