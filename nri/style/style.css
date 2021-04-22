@@ -305,7 +305,8 @@ footer{
 }
 /* privacy */
 .privacy{
-  margin: 56px auto;
+  margin: 52px auto;
+
 }
 .privacy ul{
   display: flex;
@@ -319,10 +320,10 @@ footer{
   border-right: 1px gray solid;
   padding:0 24px; 
 }
-footer p{
-  margin-left: auto;
-
+.privacy p{
+ padding-left:5% ;
 }
+
 /* 
 @media(max-width:600px){
   .main-nav{
