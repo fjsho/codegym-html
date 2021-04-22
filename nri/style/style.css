@@ -82,6 +82,11 @@ img{
   margin: 40px auto;
 }
 
+/* リンク手前の">" */
+.before a:before{
+  content: ">　";
+  font-size: 0.5rem;
+}
 
 
 /* HEADER 
@@ -116,6 +121,9 @@ img{
 .main-nav li:hover{
   color: blue;
   border-bottom:2px  blue solid;
+}
+.main-nav a:before{
+  content:none;
 }
 
 /* sub-nav */
@@ -240,11 +248,6 @@ main a{
   margin:10px;
   padding:10px;
 }
-.sub-menu li a:before{
-  content:">　";
-  font-size: 0.5rem;
-}
-
 
 /* FOOTER 
 -------------------------*/
@@ -298,10 +301,6 @@ footer{
 }
 .sitemap-list li ul li{
   margin: 20px 0;
-}
-.sitemap-list li ul a:before{
-  content: ">　";
-  font-size:0.5rem ;
 }
 /* privacy */
 .privacy{
