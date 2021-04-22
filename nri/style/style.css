@@ -90,6 +90,10 @@ img{
   opacity: 0.7;
 	transition: opacity 0.3s ease;
 }
+/* マウスオーバー時に下線を表示 */
+.hover-underline a:hover{
+ text-decoration: underline; 
+}
 
 
 /* HEADER 
