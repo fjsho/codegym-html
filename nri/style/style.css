@@ -71,10 +71,9 @@ main a:before{
 }
 .pagenation a:before,
 .follow a:before,
-.share-button a::before{
+.share-button a:before{
   content: none;
 }
-
 
 /* マウスオーバー時のフェード設定 */
 .sub-nav .fade img,
@@ -148,7 +147,7 @@ main li{
   list-style-type: none;
 }
 .main-content a,
-.sub-menu{
+.sub-menu a{
   color:#0c419a;
 }
 
@@ -330,9 +329,12 @@ footer{
 }
 .privacy li{
   font-size: 0.75rem;
-  border-right: 1px gray solid;
   padding:0 24px; 
 }
+.privacy li:not(.privacy-list-last){
+  border-right: 1px gray solid;
+}
+
 .privacy p{
  padding-left:5% ;
 }
