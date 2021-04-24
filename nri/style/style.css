@@ -322,7 +322,7 @@ footer{
 /* privacy */
 .privacy{
   margin: 52px auto;
-
+  display: table;
 }
 .privacy ul{
   display: flex;
@@ -338,7 +338,6 @@ footer{
 .privacy li:not(.privacy-list-last){
   border-right: 1px gray solid;
 }
-
 .privacy p{
- padding-left:5% ;
+ padding-left:24px ;
 }
