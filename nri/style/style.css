@@ -59,10 +59,12 @@ img{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 40px auto;
 }
-
+.pagenation span{
+  color: black;
+}
 
 /*:マーカー（">"）設定 */
 main a:before{
@@ -250,7 +252,7 @@ main li{
   padding: 24px 0;
   border-bottom: 1px gray solid;
 }
-.sub-menu div{
+.sub-menu div:not(.pagenation){
   border-bottom:1px gray solid;
   margin-top: 32px;
 }
