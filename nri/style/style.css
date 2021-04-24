@@ -85,6 +85,7 @@ img{
   font-size: 0.5rem;
 }
 /* マウスオーバー時のフェード設定 */
+.fade img,
 .fade .button:hover,
 .fade li:hover{
   opacity: 0.7;
@@ -144,8 +145,8 @@ img{
   padding-top: 8px;
 }
 .sub-nav img{
-  width: 40px;
-  height:28px;
+  width: 20px;
+  height:20px;
 }
 
 /* MAIN
