@@ -53,22 +53,6 @@ img{
   height: 24px;
 }
 
-/* ボタン */
-.button{
-  display: block;
-  background-color:#005bac;
-  color: white;
-  text-align: center;
-  width: 400px;
-  height: 64px;
-  margin: 56px auto;
-  padding: 4px;
-}
-.button img{
-  width:1rem;
-  height:1rem;
-  margin-left: 10px;
-}
 
 /* pagenation */
 .pagenation{
@@ -79,20 +63,29 @@ img{
   margin: 40px auto;
 }
 
+
 /*:マーカー（">"）設定 */
-.before a:before{
+main a:before{
   content: ">　";
   font-size: 0.5rem;
 }
+.pagenation a:before,
+.follow a:before,
+.share-button a::before{
+  content: none;
+}
+
+
 /* マウスオーバー時のフェード設定 */
-.fade img,
+.sub-nav .fade img,
 .fade .button:hover,
 .fade li:hover{
   opacity: 0.7;
 	transition: opacity 0.3s ease;
 }
 /* マウスオーバー時に下線を表示 */
-.hover-underline a:hover{
+.hover-underline a:hover,
+.hover-underline span:hover{
  text-decoration: underline; 
 }
 
@@ -154,8 +147,9 @@ img{
 main li{
   list-style-type: none;
 }
-main a{
-  color:cornflowerblue;
+.main-content a,
+.sub-menu{
+  color:#0c419a;
 }
 
 /* breadcrumb */
@@ -204,6 +198,24 @@ main a{
   margin: 10px 0;
   font-size: 1rem;
 }
+
+/* ボタン */
+.main-content .button{
+  display: block;
+  background-color:#005bac;
+  color: #ffffff;
+  text-align: center;
+  width: 400px;
+  height: 64px;
+  margin: 56px auto;
+  padding: 4px;
+}
+.button img{
+  width:1rem;
+  height:1rem;
+  margin-left: 10px;
+}
+
 /* sub-content */
 .sub-content{
   background-color: rgb(206, 226, 250);
