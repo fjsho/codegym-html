@@ -2,73 +2,71 @@
 
 /* 共通部分 
 ----------------------*/
-html{
+html {
   font-size: 100%;
   background-color: #fff;
 }
 
-body{
+body {
   line-height: 1.85;
   color: #000;
-
 }
-a{
+a {
   text-decoration: none;
   color: #000;
 }
-a:active{
+a:active {
   color: #000;
 }
-a:focus{
+a:focus {
   outline: none;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-.main-wrapper{
+.main-wrapper {
   margin: 0 auto 48px;
   max-width: 800px;
 }
 .share-button,
-.share-button ul{
+.share-button ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
 
-.share-button span{
+.share-button span {
   font-size: 0.7rem;
 }
 
-.share-button li{
+.share-button li {
   list-style-type: none;
   padding: 20px 8px;
 }
 
-.share-button img{
+.share-button img {
   width: 24px;
   height: 24px;
 }
 
-
 /* pagenation */
-.pagenation{
+.pagenation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 1rem;
   margin: 40px auto;
 }
-.pagenation span{
+.pagenation span {
   color: #000;
 }
 
 /*:before擬似クラス（">"）設定 */
 /* 対象：mainタグ内のaタグで、pagenation, follow,share-buttonクラスに該当しないもの */
-.main a:not(.pagenation a, .follow a, .share-button a):before{
+.main a:not(.pagenation a, .follow a, .share-button a):before {
   content: ">　";
   font-size: 0.5rem;
 }
@@ -77,90 +75,90 @@ img{
 /* 対象：mainタグ内でブロック型で表示されているaタグ */
 .sub-nav img:hover,
 .button:hover,
-.sub-content li:hover{
+.sub-content li:hover {
   opacity: 0.7;
-	transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 /* マウスオーバー時に下線を表示 */
 /* 対象：main、footerタグ内のaタグで、フェード設定対象外かつfollow,share-buttonクラスに該当しないもの */
 .pagenation a:hover,
 .sub-menu a:hover,
 .sitemap-list a:hover,
-.privacy a:hover{
-  text-decoration: underline; 
+.privacy a:hover {
+  text-decoration: underline;
 }
 
 /* HEADER 
 ------------------------*/
 
 /* page-header */
-.page-header{
+.page-header {
   padding: 20px 24px 12px 24px;
   width: 100%;
   background-color: #fff;
   position: fixed;
 }
 .page-header,
-.page-header ul{
+.page-header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.page-header div{
+.page-header div {
   min-width: 12%;
   margin-right: 8%;
 }
 /* main-nav */
-.main-nav li{
+.main-nav li {
   display: block;
   font-weight: bold;
   list-style-type: none;
   font-size: 0.8rem;
-  margin:auto 10px ;
+  margin: auto 10px;
 }
-.main-nav li a:hover{
-  color:#0f4199;
-  border-bottom:2px  #0f4199 solid;
+.main-nav li a:hover {
+  color: #0f4199;
+  border-bottom: 2px #0f4199 solid;
 }
-.main-nav a:before{
-  content:none;
+.main-nav a:before {
+  content: none;
 }
 
 /* sub-nav */
-.sub-nav{
+.sub-nav {
   min-width: 112px;
 }
-.sub-nav li{
+.sub-nav li {
   list-style: none;
-  margin:0 5px;
+  margin: 0 5px;
   vertical-align: middle;
   padding-top: 8px;
 }
-.sub-nav img{
+.sub-nav img {
   width: 20px;
-  height:20px;
+  height: 20px;
 }
 
 /* MAIN
 -------------------------*/
-.main li{
+.main li {
   list-style-type: none;
 }
 .main-content a,
-.sub-menu a{
-  color:#0f4199;
+.sub-menu a {
+  color: #0f4199;
 }
 
 /* breadcrumb */
-.breadcrumb{
+.breadcrumb {
   margin-left: 5%;
   padding-top: 100px;
 }
 
 .breadcrumb,
-.breadcrumb a{
+.breadcrumb a {
   display: flex;
   flex-direction: row;
   font-size: 0.625rem;
@@ -168,7 +166,7 @@ img{
 }
 
 /* page-title */
-.page-title{
+.page-title {
   max-width: 100%;
   height: 240px;
   background-image: url(../images/h1_whats_2.jpg);
@@ -176,176 +174,176 @@ img{
   margin: 10px 0;
   padding: 28px 0 0 6%;
 }
-.page-title h1{
+.page-title h1 {
   font-size: 1.5rem;
 }
 .page-title p,
-.page-title h1{
+.page-title h1 {
   color: #fff;
 }
 
 /* main-content */
-.main-content{
+.main-content {
   margin: 0 auto;
-  max-width:850px;
+  max-width: 850px;
 }
-.main-content h2{
+.main-content h2 {
   background-image: url(../images/square.png);
-  background-size:30px ;
-  padding-left:40px ;
-  margin:10px 0 ;  
+  background-size: 30px;
+  padding-left: 40px;
+  margin: 10px 0;
 }
-.main-content p{
+.main-content p {
   margin: 10px 0;
   font-size: 1rem;
 }
 
 /* ボタン */
-.main-content .button{
-  background-color:#0763b3;
+.main-content .button {
+  background-color: #0763b3;
   text-align: center;
   width: 400px;
   height: 64px;
   margin: 56px auto;
   padding: 4px;
 }
-.main-content .button a{
+.main-content .button a {
   display: block;
   color: #fff;
 }
-.main-content .button img{
-  width:1rem;
-  height:1rem;
+.main-content .button img {
+  width: 1rem;
+  height: 1rem;
   margin-left: 10px;
 }
 
 /* sub-content */
-.sub-content{
-  background-color:#deecf8;
+.sub-content {
+  background-color: #deecf8;
   padding: 16px;
 }
-.sub-content ul{
+.sub-content ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:repeat(2,1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
-.sub-content li{
+.sub-content li {
   border: 1px #b1b1b1 solid;
   background-color: #fff;
   text-align: center;
-  margin:16px 20px;
-  display:flex;
+  margin: 16px 20px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.sub-content li a{
+.sub-content li a {
   display: block;
   padding: 16px 20px;
 }
 
 /* sub-menu */
-.sub-menu{
-  border-top:2px #000 solid;
+.sub-menu {
+  border-top: 2px #000 solid;
   padding-bottom: 36px;
   max-width: 1080px;
   margin: 0 auto;
   font-size: 0.8rem;
 }
-.sub-menu h2{
+.sub-menu h2 {
   padding: 24px 0;
   border-bottom: 1px #b1b1b1 solid;
 }
-.sub-menu div:not(.pagenation){
-  border-bottom:1px #b1b1b1 solid;
+.sub-menu div:not(.pagenation) {
+  border-bottom: 1px #b1b1b1 solid;
   margin-top: 32px;
 }
-.sub-menu ul{
+.sub-menu ul {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
-.sub-menu li{
-  margin:10px;
-  padding:10px;
+.sub-menu li {
+  margin: 10px;
+  padding: 10px;
 }
 
 /* follow */
-.follow{
-  border-top:2px #000 solid;
-  border-bottom:2px #000 solid ;
-  padding:16px;
+.follow {
+  border-top: 2px #000 solid;
+  border-bottom: 2px #000 solid;
+  padding: 16px;
 }
-.follow span{
+.follow span {
   font-weight: bold;
 }
 .follow,
-.follow ul{
-  display:  flex;
+.follow ul {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.follow li{
+.follow li {
   list-style-type: none;
   margin: 16px;
 }
-.follow img{
+.follow img {
   width: 28px;
   height: 28px;
 }
 
 /* sitemap */
-.sitemap{
+.sitemap {
   padding-bottom: 40px;
-  border-bottom:1px #b1b1b1 solid;
+  border-bottom: 1px #b1b1b1 solid;
   font-size: 0.8rem;
 }
-.sitemap-list{
+.sitemap-list {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   list-style-type: none;
   max-width: 70%;
   margin: 0 auto;
 }
-.sitemap-list ul{
+.sitemap-list ul {
   list-style-type: none;
 }
-.sitemap-list h4{
+.sitemap-list h4 {
   display: inline;
   font-size: 1rem;
 }
-.sitemap-list li ul li{
+.sitemap-list li ul li {
   margin: 20px 0;
 }
 
 /* FOOTER 
 -------------------------*/
-footer{
+footer {
   padding-bottom: 56px;
 }
 
 /* privacy */
-.privacy{
+.privacy {
   margin: 52px auto;
   display: table;
   font-size: 0.75rem;
 }
-.privacy ul{
+.privacy ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;  
+  justify-content: center;
   list-style-type: none;
   margin: 24px auto;
 }
-.privacy li{
-  padding:0 24px; 
+.privacy li {
+  padding: 0 24px;
 }
-.privacy li:not(.privacy-list-last){
+.privacy li:not(.privacy-list-last) {
   border-right: 1px #b1b1b1 solid;
 }
-.privacy p{
- padding-left:24px ;
+.privacy p {
+  padding-left: 24px;
 }
-.privacy a{
+.privacy a {
   color: #b1b1b1;
 }
