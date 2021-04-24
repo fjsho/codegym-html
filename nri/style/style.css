@@ -68,7 +68,7 @@ img{
 
 /*:before擬似クラス（">"）設定 */
 /* 対象：mainタグ内のaタグで、pagenation, follow,share-buttonクラスに該当しないもの */
-main a:not(.pagenation a, .follow a, .share-button a):before{
+.main a:not(.pagenation a, .follow a, .share-button a):before{
   content: ">　";
   font-size: 0.5rem;
 }
@@ -144,7 +144,7 @@ main a:not(.pagenation a, .follow a, .share-button a):before{
 
 /* MAIN
 -------------------------*/
-main li{
+.main li{
   list-style-type: none;
 }
 .main-content a,
@@ -246,7 +246,7 @@ main li{
 .sub-menu{
   border-top:2px black solid;
   padding-bottom: 36px;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
   font-size: 0.8rem;
 }
