@@ -29,7 +29,7 @@ img{
 
 .main-wrapper{
   margin: 0 auto;
-  max-width: 624px;
+  max-width: 800px;
 }
 .share-button,
 .share-button ul{
@@ -306,14 +306,11 @@ main li{
 }
 .sitemap-list h4{
   display: inline;
+  font-size: 1rem;
 }
 .sitemap-list li ul li{
   margin: 20px 0;
 }
-.sitemap-list li ul li h4{
-  font-size: 1rem;
-}
-
 
 /* FOOTER 
 -------------------------*/
