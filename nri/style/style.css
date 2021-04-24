@@ -315,6 +315,13 @@ footer{
 .sitemap-list li ul li{
   margin: 20px 0;
 }
+
+/* FOOTER 
+-------------------------*/
+footer{
+  padding-bottom: 56px;
+}
+
 /* privacy */
 .privacy{
   margin: 52px auto;
