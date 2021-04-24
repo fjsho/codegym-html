@@ -4,20 +4,20 @@
 ----------------------*/
 html{
   font-size: 100%;
-  background-color: white;
+  background-color: #fff;
 }
 
 body{
   line-height: 1.85;
-  color: black;
+  color: #000;
 
 }
 a{
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 a:active{
-  color: black;
+  color: #000;
 }
 a:focus{
   outline: none;
@@ -28,7 +28,7 @@ img{
 }
 
 .main-wrapper{
-  margin: 0 auto;
+  margin: 0 auto 48px;
   max-width: 800px;
 }
 .share-button,
@@ -63,7 +63,7 @@ img{
   margin: 40px auto;
 }
 .pagenation span{
-  color: black;
+  color: #000;
 }
 
 /*:before擬似クラス（">"）設定 */
@@ -150,7 +150,7 @@ img{
 }
 .main-content a,
 .sub-menu a{
-  color:#0c419a;
+  color:#0f4199;
 }
 
 /* breadcrumb */
@@ -164,7 +164,7 @@ img{
   display: flex;
   flex-direction: row;
   font-size: 0.625rem;
-  color: gray;
+  color: #b1b1b1;
 }
 
 /* page-title */
@@ -181,7 +181,7 @@ img{
 }
 .page-title p,
 .page-title h1{
-  color: white;
+  color: #fff;
 }
 
 /* main-content */
@@ -202,7 +202,7 @@ img{
 
 /* ボタン */
 .main-content .button{
-  background-color:#005bac;
+  background-color:#0763b3;
   text-align: center;
   width: 400px;
   height: 64px;
@@ -211,7 +211,7 @@ img{
 }
 .main-content .button a{
   display: block;
-  color: #ffffff;
+  color: #fff;
 }
 .main-content .button img{
   width:1rem;
@@ -230,8 +230,8 @@ img{
   grid-template-rows:repeat(2,1fr);
 }
 .sub-content li{
-  border: 1px gray solid;
-  background-color: white;
+  border: 1px #b1b1b1 solid;
+  background-color: #fff;
   text-align: center;
   margin:16px 20px;
   display:flex;
@@ -245,7 +245,7 @@ img{
 
 /* sub-menu */
 .sub-menu{
-  border-top:2px black solid;
+  border-top:2px #000 solid;
   padding-bottom: 36px;
   max-width: 1080px;
   margin: 0 auto;
@@ -253,10 +253,10 @@ img{
 }
 .sub-menu h2{
   padding: 24px 0;
-  border-bottom: 1px gray solid;
+  border-bottom: 1px #b1b1b1 solid;
 }
 .sub-menu div:not(.pagenation){
-  border-bottom:1px gray solid;
+  border-bottom:1px #b1b1b1 solid;
   margin-top: 32px;
 }
 .sub-menu ul{
@@ -270,8 +270,8 @@ img{
 
 /* follow */
 .follow{
-  border-top:2px black solid;
-  border-bottom:2px black solid ;
+  border-top:2px #000 solid;
+  border-bottom:2px #000 solid ;
   padding:16px;
 }
 .follow span{
@@ -296,7 +296,7 @@ img{
 /* sitemap */
 .sitemap{
   padding-bottom: 40px;
-  border-bottom:1px gray solid;
+  border-bottom:1px #b1b1b1 solid;
   font-size: 0.8rem;
 }
 .sitemap-list{
@@ -341,7 +341,7 @@ footer{
   padding:0 24px; 
 }
 .privacy li:not(.privacy-list-last){
-  border-right: 1px gray solid;
+  border-right: 1px #b1b1b1 solid;
 }
 .privacy p{
  padding-left:24px ;
