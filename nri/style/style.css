@@ -299,7 +299,8 @@ main li{
   grid-template-columns: repeat(4,1fr);
   gap: 30px;
   list-style-type: none;
-  margin: 0 48px auto;
+  max-width: 70%;
+  margin: 0 auto;
 }
 .sitemap-list ul{
   list-style-type: none;
