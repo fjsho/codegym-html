@@ -82,11 +82,13 @@ main a:not(.pagenation a, .follow a, .share-button a):before{
 	transition: opacity 0.3s ease;
 }
 /* マウスオーバー時に下線を表示 */
-.hover-underline a:hover,
-.hover-underline span:hover{
- text-decoration: underline; 
+/* 対象：main、footerタグ内のaタグで、フェード設定対象外かつfollow,share-buttonクラスに該当しないもの */
+.pagenation a:hover,
+.sub-menu a:hover,
+.sitemap-list a:hover,
+.privacy a:hover{
+  text-decoration: underline; 
 }
-
 
 /* HEADER 
 ------------------------*/
