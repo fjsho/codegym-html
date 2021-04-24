@@ -67,13 +67,14 @@ img{
 }
 
 /*:before擬似クラス（">"）設定 */
-/* 対象：mainタグ内に存在するpagenation以外のaタグ */
+/* 対象：mainタグ内のaタグで、pagenation, follow,sharebuttonクラスに該当しないもの */
 main a:not(.pagenation a, .follow a, .share-button a):before{
   content: ">　";
   font-size: 0.5rem;
 }
 
 /* マウスオーバー時のフェード設定 */
+対象：
 .sub-nav .fade img,
 .fade .button:hover,
 .fade li:hover{
