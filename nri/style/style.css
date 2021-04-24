@@ -323,6 +323,7 @@ footer{
 .privacy{
   margin: 52px auto;
   display: table;
+  font-size: 0.75rem;
 }
 .privacy ul{
   display: flex;
@@ -332,7 +333,6 @@ footer{
   margin: 24px auto;
 }
 .privacy li{
-  font-size: 0.75rem;
   padding:0 24px; 
 }
 .privacy li:not(.privacy-list-last){
@@ -340,4 +340,7 @@ footer{
 }
 .privacy p{
  padding-left:24px ;
+}
+.privacy a{
+  color: #b1b1b1;
 }
