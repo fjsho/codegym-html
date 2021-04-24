@@ -67,17 +67,17 @@ img{
 }
 
 /*:before擬似クラス（">"）設定 */
-/* 対象：mainタグ内のaタグで、pagenation, follow,sharebuttonクラスに該当しないもの */
+/* 対象：mainタグ内のaタグで、pagenation, follow,share-buttonクラスに該当しないもの */
 main a:not(.pagenation a, .follow a, .share-button a):before{
   content: ">　";
   font-size: 0.5rem;
 }
 
 /* マウスオーバー時のフェード設定 */
-対象：
-.sub-nav .fade img,
-.fade .button:hover,
-.fade li:hover{
+/* 対象：mainタグ内でブロック型で表示されているaタグ */
+.sub-nav img:hover,
+.button:hover,
+.sub-content li:hover{
   opacity: 0.7;
 	transition: opacity 0.3s ease;
 }
@@ -199,16 +199,18 @@ main li{
 
 /* ボタン */
 .main-content .button{
-  display: block;
   background-color:#005bac;
-  color: #ffffff;
   text-align: center;
   width: 400px;
   height: 64px;
   margin: 56px auto;
   padding: 4px;
 }
-.button img{
+.main-content .button a{
+  display: block;
+  color: #ffffff;
+}
+.main-content .button img{
   width:1rem;
   height:1rem;
   margin-left: 10px;
@@ -216,25 +218,26 @@ main li{
 
 /* sub-content */
 .sub-content{
-  background-color: rgb(206, 226, 250);
+  background-color:#deecf8;
   padding: 16px;
 }
 .sub-content ul{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows:repeat(2,1fr);
-  gap: 8px;
 }
 .sub-content li{
   border: 1px gray solid;
   background-color: white;
   text-align: center;
-  padding:16px 20px
-}
-.sub-content li a{
-  display: flex;
+  margin:16px 20px;
+  display:flex;
   align-items: center;
   justify-content: center;
+}
+.sub-content li a{
+  display: block;
+  padding: 16px 20px;
 }
 
 /* sub-menu */
