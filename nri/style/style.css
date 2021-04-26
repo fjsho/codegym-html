@@ -93,7 +93,6 @@ img {
 
 /* page-header */
 .page-header {
-  padding: 20px 24px 12px 24px;
   width: 100%;
   background-color: #fff;
   position: fixed;
@@ -108,17 +107,19 @@ img {
 
 .page-header div {
   min-width: 12%;
-  margin-right: 8%;
+  margin:16px 8% 0 20px;
 }
 /* main-nav */
 .main-nav li {
-  display: block;
   font-weight: bold;
   list-style-type: none;
   font-size: 0.8rem;
-  margin: auto 10px;
 }
-.main-nav li a:hover {
+.main-nav a{
+  display: block;
+  padding:20px 10px 20px 10px;
+}
+.main-nav a:hover{
   color: #0f4199;
   border-bottom: 2px #0f4199 solid;
 }
@@ -129,6 +130,7 @@ img {
 /* sub-nav */
 .sub-nav {
   min-width: 112px;
+  margin-right: 20px;
 }
 .sub-nav li {
   list-style: none;
