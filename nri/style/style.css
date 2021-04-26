@@ -1,91 +1,351 @@
-@charset "utf-8"
+@charset "utf-8";
 
 /* 共通部分 
 ----------------------*/
-html{
-
-}
-body{
-
-}
-a{
-
-}
-img{
-
-}
-.wrapper{
-
+html {
+  font-size: 100%;
+  background-color: #fff;
 }
 
-.share-button{
+body {
+  line-height: 1.85;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:active {
+  color: #000;
+}
+a:focus {
+  outline: none;
+}
 
+img {
+  max-width: 100%;
+}
+
+.main-wrapper {
+  margin: 0 auto 48px;
+  max-width: 800px;
+}
+.share-button,
+.share-button ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.share-button span {
+  font-size: 0.7rem;
+}
+
+.share-button li {
+  list-style-type: none;
+  padding: 20px 8px;
+}
+
+.share-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* pagenation */
+.pagenation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 40px auto;
+}
+.pagenation span {
+  color: #000;
+}
+
+/*:before擬似クラス（">"）設定 */
+/* 対象：mainタグ内のaタグで、pagenation, follow,share-buttonクラスに該当しないもの */
+.main a:not(.pagenation a, .follow a, .share-button a):before {
+  content: ">　";
+  font-size: 0.5rem;
+}
+
+/* マウスオーバー時のフェード設定 */
+/* 対象：mainタグ内でブロック型で表示されているaタグ */
+.sub-nav img:hover,
+.button:hover,
+.sub-content li:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+/* マウスオーバー時に下線を表示 */
+/* 対象：main、footerタグ内のaタグで、フェード設定対象外かつfollow,share-buttonクラスに該当しないもの */
+.pagenation a:hover,
+.sub-menu a:hover,
+.sitemap-list a:hover,
+.privacy a:hover {
+  text-decoration: underline;
 }
 
 /* HEADER 
 ------------------------*/
 
 /* page-header */
-.page-header{
-
+.page-header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+}
+.page-header,
+.page-header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.page-header div {
+  min-width: 12%;
+  margin:16px 8% 0 20px;
+}
 /* main-nav */
-
+.main-nav li {
+  font-weight: bold;
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+.main-nav a{
+  display: block;
+  padding:20px 10px 20px 10px;
+}
+.main-nav a:hover{
+  color: #0f4199;
+  border-bottom: 2px #0f4199 solid;
+}
+.main-nav a:before {
+  content: none;
+}
 
 /* sub-nav */
-
+.sub-nav {
+  min-width: 112px;
+  margin-right: 20px;
+}
+.sub-nav li {
+  list-style: none;
+  margin: 0 5px;
+  vertical-align: middle;
+  padding-top: 8px;
+}
+.sub-nav img {
+  width: 20px;
+  height: 20px;
+}
 
 /* MAIN
 -------------------------*/
+.main li {
+  list-style-type: none;
+}
+.main-content a,
+.sub-menu a {
+  color: #0f4199;
+}
 
 /* breadcrumb */
-.breadcrumb{
+.breadcrumb {
+  margin-left: 5%;
+  padding-top: 100px;
+}
 
+.breadcrumb,
+.breadcrumb a {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.625rem;
+  color: #b1b1b1;
 }
 
 /* page-title */
-.page-title{
-
+.page-title {
+  max-width: 100%;
+  height: 240px;
+  background-image: url(../images/h1_whats_2.jpg);
+  background-size: cover;
+  margin: 10px 0;
+  padding: 28px 0 0 6%;
+}
+.page-title h1 {
+  font-size: 1.5rem;
+}
+.page-title p,
+.page-title h1 {
+  color: #fff;
 }
 
 /* main-content */
-.main-content{
-
+.main-content {
+  margin: 0 auto;
+  max-width: 850px;
+}
+.main-content h2 {
+  background-image: url(../images/square.png);
+  background-size: 30px;
+  padding-left: 40px;
+  margin: 10px 0;
+}
+.main-content p {
+  margin: 10px 0;
+  font-size: 1rem;
 }
 
 /* ボタン */
-.button{
-
+.main-content .button {
+  background-color: #0763b3;
+  text-align: center;
+  width: 400px;
+  height: 64px;
+  margin: 56px auto;
+  padding: 4px;
+}
+.main-content .button a {
+  display: block;
+  color: #fff;
+}
+.main-content .button img {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 10px;
 }
 
 /* sub-content */
-.sub-content{
-
+.sub-content {
+  background-color: #deecf8;
+  padding: 16px;
+}
+.sub-content ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.sub-content li {
+  border: 1px #b1b1b1 solid;
+  background-color: #fff;
+  text-align: center;
+  margin: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-content li a {
+  display: block;
+  padding: 16px 20px;
 }
 
 /* sub-menu */
-.sub-menu{
-
+.sub-menu {
+  border-top: 2px #000 solid;
+  padding-bottom: 36px;
+  max-width: 1080px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+.sub-menu h2 {
+  padding: 24px 0;
+  border-bottom: 1px #b1b1b1 solid;
+}
+.sub-menu div:not(.pagenation) {
+  border-bottom: 1px #b1b1b1 solid;
+  margin-top: 32px;
+}
+.sub-menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.sub-menu li {
+  margin: 10px;
+  padding: 10px;
 }
 
-
-/* FOOTER 
--------------------------*/
-
 /* follow */
-.follow{
-
+.follow {
+  border-top: 2px #000 solid;
+  border-bottom: 2px #000 solid;
+  padding: 16px;
+}
+.follow span {
+  font-weight: bold;
+}
+.follow,
+.follow ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.follow li {
+  list-style-type: none;
+  margin: 16px;
+}
+.follow img {
+  width: 28px;
+  height: 28px;
 }
 
 /* sitemap */
 .sitemap {
+  padding-bottom: 40px;
+  border-bottom: 1px #b1b1b1 solid;
+  font-size: 0.8rem;
+}
+.sitemap-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style-type: none;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.sitemap-list ul {
+  list-style-type: none;
+}
+.sitemap-list h4 {
+  display: inline;
+  font-size: 1rem;
+}
+.sitemap-list li ul li {
+  margin: 20px 0;
+}
 
+/* FOOTER 
+-------------------------*/
+footer {
+  padding-bottom: 56px;
 }
 
 /* privacy */
-.privacy{
-
+.privacy {
+  margin: 52px auto;
+  display: table;
+  font-size: 0.75rem;
 }
-
-
+.privacy ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin: 24px auto;
+}
+.privacy li {
+  padding: 0 24px;
+}
+.privacy li:not(.privacy-list-last) {
+  border-right: 1px #b1b1b1 solid;
+}
+.privacy p {
+  padding-left: 24px;
+}
+.privacy a {
+  color: #b1b1b1;
+}
