@@ -4,10 +4,10 @@ var sassGlob = require('gulp-sass-glob');
 var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
 var notify = require("gulp-notify");
-var postcss = require('gulp-postcss');
+var gulpPostcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var assets = require('postcss-assets');
-var cssdeclsort = require('css-declaration-sorter'); //①「css-declaration-sorter」を読み込み
+var cssDeclarationSorter = require('css-declaration-sorter'); //①「css-declaration-sorter」を読み込み
  
 gulp.task('css', () => {
   return gulp.src('./assets/css/style.css')
@@ -16,16 +16,16 @@ gulp.task('css', () => {
 });
 
 gulp.task('sass', function() {
-  return gulp.src('./sass/_page-header.scss')
+  return gulp.src('./sass/style.scss')
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(postcss([cssdeclsort({order: 'smacss'})])) //②「sass」の後に指定
-    .pipe(postcss([assets({
+    .pipe(gulpPostcss([cssDeclarationSorter({order: 'smacss'})])) //②「sass」の後に指定
+    .pipe(gulpPostcss([assets({
       loadPaths: ['./images']
     })]))
-    .pipe(postcss([autoprefixer()]))
+    .pipe(gulpPostcss([autoprefixer()]))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./sass/'));
 });
