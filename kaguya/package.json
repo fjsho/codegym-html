@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "css-declaration-sorter": "^6.2.2",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1"
+  }
+}
