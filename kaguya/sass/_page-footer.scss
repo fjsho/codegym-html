@@ -1,0 +1,43 @@
+.page-footer {
+  width: 100%;
+  background-color: #918F89;
+
+  %__nav-list {
+    font: normal normal normal 18px/24px Noto Sans;
+    color: #FFF;
+    list-style-type: none;
+    padding: 0 0 0 32px;
+  }
+
+  &__wrapper {
+    padding: 120px 224px 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__logo {
+    height: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__nav-list {
+    @extend %__nav-list;
+
+    &--link {
+      @extend %__nav-list;
+      text-decoration: none;  
+    }
+  }
+
+  &__copyright {
+    color: #FFF;
+    text-align: center;
+    padding: 41px 0 24px;
+  }
+}

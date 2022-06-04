@@ -4,23 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>HTMLCSS.code</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    <header>
-      <div>
-        <div>
-          <h1>
-            <a href="./index.html">
-              <img src="./assets/img/logo_header.png" alt="HTMLCSS" />
-            </a>
-          </h1>
-        </div>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__logo">
+          <a href="./index.html">
+            <img src="./assets/img/logo_header.png" alt="HTMLCSS" />
+          </a>
+        </h1>
         <nav>
-          <ul>
-            <li>HOME</li>
-            <li><a href="./news.html">NEWS</a></li>
-            <li><a href="./recruit.html">RECRUIT</a></li>
-            <li><a href="./contact.html">CONTACT</a></li>
+          <ul class="page-header__nav">
+            <li class="page-header__nav-list">
+              HOME
+            </li>
+            <li class="page-header__nav-list">
+              <a href="./news.html" class="page-header__nav-list--link">
+                NEWS
+              </a>
+            </li>
+            <li class="page-header__nav-list">
+              <a href="./recruit.html" class="page-header__nav-list--link">
+                RECRUIT
+              </a>
+            </li>
+            <li class="page-header__nav-list">
+              <a href="./contact.html" class="page-header__nav-list--link">
+                CONTACT
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -106,23 +120,39 @@
         <a href="./recruit.html">view more</a>
       </section>
     </main>
-    <footer>
-      <div>
-        <div>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div  class="page-footer__logo">
           <a href="./index.html">
             <img src="./assets/img/logo_footer.png" alt="HTMLCSS" />
           </a>
         </div>
         <nav>
-          <ul>
-            <li>HOME</li>
-            <li><a href="./news.html">NEWS</a></li>
-            <li><a href="./recruit.html">RECRUIT</a></li>
-            <li><a href="./contact.html">CONTACT</a></li>
+          <ul class="page-footer__nav">
+            <li class="page-footer__nav-list">
+              HOME
+            </li>
+            <li class="page-footer__nav-list">
+              <a href="./news.html" class="page-footer__nav-list--link">
+                NEWS
+              </a>
+            </li>
+            <li class="page-footer__nav-list">
+              <a href="./recruit.html" class="page-footer__nav-list--link">
+                RECRUIT
+              </a>
+            </li>
+            <li class="page-footer__nav-list">
+              <a href="./contact.html" class="page-footer__nav-list--link">
+                CONTACT
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
-      <p><small>&copy;HTMLCSS.code</small></p>
-    </footer>
+      <div class="page-footer__copyright">
+        <p><small>&copy;HTMLCSS.code</small></p>
+      </div>
+  </footer>
   </body>
 </html>
