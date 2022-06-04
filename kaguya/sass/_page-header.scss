@@ -6,7 +6,6 @@
     font: normal normal normal 16px/22px Noto Sans;
     color: #3B3B3B;
     list-style-type: none;
-    padding: 0 0 0 56px;
   }
 
   &__wrapper {
@@ -28,6 +27,7 @@
 
   &__nav-list {
     @extend %__nav-list;
+    padding: 0 0 0 56px;
 
     &--link {
       @extend %__nav-list;
