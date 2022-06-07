@@ -97,27 +97,29 @@
       </section>
       <section class="section">
         <h2 class="section__header">CONTACT</h2>
-        <form action="" method="POST" name="contact">
-          <p>
-            <input type="text" name="name" id="name" placeholder="お名前" />
-          </p>
-          <p>
+        <form action="" method="POST" name="contact" class="contact__form">
+          <div class="contact__form-field">
+            <input type="text" name="name" id="name" placeholder="お名前" class="contact__form-input"/>
+          </div>
+          <div class="contact__form-field">
             <input
               type="email"
               name="email"
               id="email"
               placeholder="メールアドレス"
+              class="contact__form-input"
             />
-          </p>
-          <p>
+          </div>
+          <div class="contact__form-field">
             <textarea
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="お問い合わせ内容"
+              class="contact__form-input"
             ></textarea>
-          </p>
+          </div>
           <button type="submit" class="contact__form-btn">
             SEND
           </button>
@@ -125,7 +127,7 @@
       </section>
       <section class="section">
         <h2 class="section__header">RECRUIT</h2>
-        <p class="section__text">現在Staffを募集しております。 詳しくは詳細ページをご覧ください。</p>
+        <p class="section__text">現在Staffを募集しております。<br>詳しくは詳細ページをご覧ください。</p>
         <a class="section__link" href="./recruit.html">view more</a>
       </section>
     </main>

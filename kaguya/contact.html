@@ -50,31 +50,35 @@
         <p class="section__text">
           オーダー家具や在庫状況のお問い合わせは下記フォームから承っております。
         </p>
-        <form action="" method="POST" name="contact">
-          <p>
-            <input type="text" name="name" id="name" placeholder="お名前" />
-          </p>
-          <p>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="メールアドレス"
-            />
-          </p>
-          <p>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="お問い合わせ内容"
-            ></textarea>
-          </p>
-          <button type="submit" class="contact__form-btn">
-            SEND
-          </button>
-        </form>
+        <div class="contact">
+          <form action="" method="POST" name="contact" class="contact__form">
+            <div class="contact__form-field">
+              <input type="text" name="name" id="name" placeholder="お名前" class="contact__form-input"/>
+            </div>
+            <div class="contact__form-field">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="メールアドレス"
+                class="contact__form-input"
+              />
+            </div>
+            <div class="contact__form-field">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="お問い合わせ内容"
+                class="contact__form-input"
+              ></textarea>
+            </div>
+            <button type="submit" class="contact__form-btn">
+              SEND
+            </button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
