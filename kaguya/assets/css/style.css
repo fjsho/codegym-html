@@ -123,4 +123,43 @@
   width: 50%;
 }
 
+.top {
+  width: 100%;
+}
+.top .top__chach--contact, .top .top__chach--recruit, .top .top__chach--news, .top .top__chach {
+  background-size: cover;
+  padding-top: 38%;
+  min-height: 456px;
+  box-sizing: border-box;
+}
+.top__chach--news {
+  background: url("../img/news_top@2x.png") no-repeat center center;
+}
+.top__chach--recruit {
+  background: url("../img/recruit_top@2x.png") no-repeat center center;
+}
+.top__chach--contact {
+  background: url("../img/contact_top@2x.png") no-repeat center center;
+}
+.top .top__header--contact, .top .top__header--recruit, .top .top__header--news, .top .top__header {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  text-align: left;
+  font-size: 30px;
+  line-height: 53px;
+  font-weight: normal;
+  font-family: Noto Sans;
+  letter-spacing: 3px;
+}
+.top__header--news {
+  color: #918F89;
+}
+.top__header--recruit {
+  color: #918F89;
+}
+.top__header--contact {
+  color: #FCFCFC;
+}
+
 /*# sourceMappingURL=style.css.map */

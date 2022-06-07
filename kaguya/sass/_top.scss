@@ -1,0 +1,63 @@
+$img-path: "../img";
+
+.top {
+  width: 100%;
+
+  %__chach {
+    background-size: cover;
+    padding-top: 38%; //背景画像のアスペクト比(画像の高さ/画像の幅*100)
+    min-height: 456px; //背景画像の元の高さ
+    box-sizing: border-box;
+  }
+  
+  &__chach {
+    @extend %__chach;
+
+    &--news {
+      @extend %__chach;
+      background: url($img-path + "/news_top@2x.png") no-repeat center center;
+    }
+
+    &--recruit {
+      @extend %__chach;
+      background: url($img-path + "/recruit_top@2x.png") no-repeat center center;
+    }
+
+    &--contact {
+      @extend %__chach;
+      background: url($img-path + "/contact_top@2x.png") no-repeat center center;
+    }
+
+  }
+
+  %__header {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    text-align: left;
+    font-size: 30px;
+    line-height: 53px;
+    font-weight: normal;
+    font-family: Noto Sans;
+    letter-spacing: 3px;
+  }
+
+  &__header {
+    @extend %__header;
+
+    &--news {
+      @extend %__header;
+      color: #918F89;
+    }
+    &--recruit {
+      @extend %__header;
+      color: #918F89;
+    }
+    &--contact {
+      @extend %__header;
+      color: #FCFCFC;
+    }
+
+  }
+
+}
