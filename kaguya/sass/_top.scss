@@ -9,7 +9,7 @@ $img-path: "../img";
     min-height: 456px; //背景画像の元の高さ
     box-sizing: border-box;
   }
-  
+
   &__chach {
     @extend %__chach;
 
@@ -27,7 +27,6 @@ $img-path: "../img";
       @extend %__chach;
       background: url($img-path + "/contact_top@2x.png") no-repeat center center;
     }
-
   }
 
   %__header {
@@ -49,15 +48,15 @@ $img-path: "../img";
       @extend %__header;
       color: #918F89;
     }
+
     &--recruit {
       @extend %__header;
       color: #918F89;
     }
+
     &--contact {
       @extend %__header;
       color: #FCFCFC;
     }
-
   }
-
 }
