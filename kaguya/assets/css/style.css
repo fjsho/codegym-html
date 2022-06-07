@@ -162,4 +162,43 @@
   color: #FCFCFC;
 }
 
+.section {
+  color: #3B3B3B;
+  text-align: center;
+  padding: 160px 0 80px;
+}
+.section__header {
+  font-size: 24px;
+  line-height: 53px;
+  font-family: Noto Sans;
+  font-weight: normal;
+  letter-spacing: 2.4px;
+  padding-bottom: 48px;
+}
+.section__text {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: Noto Sans;
+  font-weight: normal;
+  letter-spacing: 0.45px;
+  padding-bottom: 40px;
+}
+.section__link {
+  color: #3B3B3B;
+  font-size: 18px;
+  line-height: 45px;
+  font-family: Noto Sans;
+  font-weight: normal;
+  letter-spacing: 0.9px;
+  opacity: 0.3;
+  text-decoration: none;
+}
+.section__link::after {
+  content: ">";
+  font-size: small;
+  position: relative;
+  top: -2px;
+  left: 6px;
+}
+
 /*# sourceMappingURL=style.css.map */
