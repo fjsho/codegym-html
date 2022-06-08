@@ -1,0 +1,32 @@
+.news {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 32px 32px;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    background-color: #000;
+    margin: 0 32px;
+  }
+
+  &__image {
+    height: 320px;
+    width: 320px;
+    opacity: .6;
+  }
+
+  &__message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+  }
+}
