@@ -68,11 +68,6 @@
 .concept {
   width: 100%;
 }
-.concept .concept__detail-wrapper, .concept .concept__detail--text, .concept .concept__detail--header {
-  text-align: left;
-  color: #3B3B3B;
-  font-weight: normal;
-}
 .concept__main-visual {
   background: url("../img/home_top@2x.png") no-repeat center center;
   background-size: cover;
@@ -97,10 +92,20 @@
   letter-spacing: 2.65px;
   color: #918F89;
 }
-.concept__detail {
+.concept__detail-wrapper {
   display: flex;
   flex-direction: row;
-  padding: 80px 88px;
+  align-items: flex-end;
+  padding: 80px 60px;
+  height: 720px;
+}
+.concept .concept__detail--text, .concept .concept__detail--header, .concept .concept__detail {
+  text-align: left;
+  color: #3B3B3B;
+  font-weight: normal;
+}
+.concept__detail {
+  padding: 240px 28px 90px;
 }
 .concept__detail--header {
   font-size: 25px;
@@ -115,13 +120,12 @@
   font-family: Noto Sans;
   letter-spacing: 0.36px;
 }
-.concept__detail-wrapper {
-  padding: 240px 112px 90px 56px;
-}
 .concept__sub-visual {
-  background: url("../img/concept@2x.png") no-repeat center center;
+  background: url("../img/concept@2x.png") no-repeat left center;
   background-size: cover;
-  width: 50%;
+  margin: 0 28px;
+  padding-left: 50%;
+  height: 560px;
 }
 
 .top {

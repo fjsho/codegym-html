@@ -3,12 +3,6 @@ $img-path: "../img";
 .concept {
   width: 100%;
 
-  %__detail-wrapper {
-    text-align: left;
-    color: #3B3B3B;
-    font-weight: normal;
-  }
-
   &__main-visual {
     background: url($img-path + "/home_top@2x.png") no-repeat center center;
     background-size: cover;
@@ -36,13 +30,28 @@ $img-path: "../img";
     }
   }
 
-  &__detail {
+  &__detail-wrapper {
     display: flex;
     flex-direction: row;
-    padding: 80px 88px;
+    align-items: flex-end;
+    padding: 80px 60px;
+
+    // 要素の高さをsub-vidualの背景画像サイズ（560*560）に合わせるための設定
+    height: 720px; // height - padding-top/bottom = 560px
+  }
+
+  %__detail {
+    text-align: left;
+    color: #3B3B3B;
+    font-weight: normal;
+  }
+
+  &__detail {
+    @extend %__detail;
+    padding: 240px 28px 90px ;
 
     &--header {
-      @extend %__detail-wrapper;
+      @extend %__detail;
       font-size: 25px;
       line-height: 53px;
       font-family: Noto Sans;
@@ -51,7 +60,7 @@ $img-path: "../img";
     }
 
     &--text {
-      @extend %__detail-wrapper;
+      @extend %__detail;
       font-size: 12px;
       line-height: 30px;
       font-family: Noto Sans;
@@ -59,14 +68,11 @@ $img-path: "../img";
     }
   }
 
-  &__detail-wrapper {
-    @extend %__detail-wrapper;
-    padding: 240px 112px 90px 56px;
-  }
-
   &__sub-visual {
-    background: url($img-path + "/concept@2x.png") no-repeat center center;
+    background: url($img-path + "/concept@2x.png") no-repeat left center;
     background-size: cover;
-    width: 50%;
+    margin: 0 28px;
+    padding-left: 50%;
+    height: 560px;
   }
 }
