@@ -14,10 +14,13 @@
   list-style-type: none;
 }
 .page-header__wrapper {
-  padding: 16px 96px;
+  padding: 16px 0;
+  margin: auto;
+  width: 92.5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
 }
 @media screen and (max-width: 1280px) {
   .page-header__wrapper {
@@ -54,11 +57,18 @@
   list-style-type: none;
 }
 .page-footer__wrapper {
-  padding: 120px 224px 39px;
+  padding: 120px 0 39px;
+  margin: auto;
+  width: 82.5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+}
+@media screen and (max-width: 1280px) {
+  .page-footer__wrapper {
+    justify-content: center;
+  }
 }
 .page-footer__logo --img {
   height: 40px;
