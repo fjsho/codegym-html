@@ -2,7 +2,7 @@
   width: 100%;
   background-color: #918F89;
 
-  %__nav-list {
+  %__nav-text {
     font: normal normal normal 18px/24px Noto Sans;
     color: #FFF;
     list-style-type: none;
@@ -21,16 +21,20 @@
   }
 
   &__nav {
-    display: flex;
-    justify-content: flex-end;
+    width: 50%;
   }
 
   &__nav-list {
-    @extend %__nav-list;
-    padding: 0 0 0 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-text {
+    @extend %__nav-text;
+    // padding: 0 0 0 32px;
 
     &--link {
-      @extend %__nav-list;
+      @extend %__nav-text;
       text-decoration: none;  
     }
   }

@@ -3,7 +3,7 @@
   width: 100%;
   background-color: white;
 }
-.page-header .page-header__nav-list--link, .page-header .page-header__nav-list {
+.page-header .page-header__nav-text--link, .page-header .page-header__nav-text {
   font: normal normal normal 16px/22px Noto Sans;
   color: #3B3B3B;
   list-style-type: none;
@@ -19,13 +19,13 @@
   height: 24px;
 }
 .page-header__nav {
-  display: flex;
-  justify-content: flex-end;
+  width: 45%;
 }
 .page-header__nav-list {
-  padding: 0 0 0 56px;
+  display: flex;
+  justify-content: space-between;
 }
-.page-header__nav-list--link {
+.page-header__nav-text--link {
   opacity: 0.7;
   text-decoration: none;
 }
@@ -34,7 +34,7 @@
   width: 100%;
   background-color: #918F89;
 }
-.page-footer .page-footer__nav-list--link, .page-footer .page-footer__nav-list {
+.page-footer .page-footer__nav-text--link, .page-footer .page-footer__nav-text {
   font: normal normal normal 18px/24px Noto Sans;
   color: #FFF;
   list-style-type: none;
@@ -50,13 +50,13 @@
   height: 40px;
 }
 .page-footer__nav {
-  display: flex;
-  justify-content: flex-end;
+  width: 50%;
 }
 .page-footer__nav-list {
-  padding: 0 0 0 32px;
+  display: flex;
+  justify-content: space-between;
 }
-.page-footer__nav-list--link {
+.page-footer__nav-text--link {
   text-decoration: none;
 }
 .page-footer__copyright {
