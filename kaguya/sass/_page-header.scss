@@ -1,6 +1,11 @@
+@use 'mixin';
+
 .page-header {
   width: 100%;
   background-color: white;
+  @include mixin.sp {
+    background-color: #918F89;
+  }
 
   %__nav-text {
     font: normal normal normal 16px/22px Noto Sans;
@@ -13,15 +18,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    @include mixin.sp {
+      justify-content: center;
+    }
   }
 
   &__logo {
-    height: 24px;
+    &--img {
+      height: 24px;
+    }
   }
 
   &__nav {
     width: 45%;
+    @include mixin.sp {
+      display: none;
+    }
   }
 
   &__nav-list {
@@ -31,7 +43,6 @@
 
   &__nav-text {
     @extend %__nav-text;
-    // padding: 0 0 0 56px;
 
     &--link {
       @extend %__nav-text;

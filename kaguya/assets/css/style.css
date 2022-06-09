@@ -3,6 +3,11 @@
   width: 100%;
   background-color: white;
 }
+@media screen and (max-width: 1280px) {
+  .page-header {
+    background-color: #918F89;
+  }
+}
 .page-header .page-header__nav-text--link, .page-header .page-header__nav-text {
   font: normal normal normal 16px/22px Noto Sans;
   color: #3B3B3B;
@@ -13,13 +18,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
 }
-.page-header__logo {
+@media screen and (max-width: 1280px) {
+  .page-header__wrapper {
+    justify-content: center;
+  }
+}
+.page-header__logo--img {
   height: 24px;
 }
 .page-header__nav {
   width: 45%;
+}
+@media screen and (max-width: 1280px) {
+  .page-header__nav {
+    display: none;
+  }
 }
 .page-header__nav-list {
   display: flex;
