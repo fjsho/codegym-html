@@ -1,3 +1,5 @@
+@use 'mixin';
+
 .page-footer {
   width: 100%;
   background-color: #918F89;
@@ -17,11 +19,19 @@
   }
 
   &__logo {
-    height: 40px;
+    --img {
+      height: 40px;
+      @include mixin.sp {
+        height: 32px;
+      }
+    }
   }
 
   &__nav {
     width: 50%;
+    @include mixin.sp {
+      display: none;
+    }
   }
 
   &__nav-list {
@@ -31,7 +41,6 @@
 
   &__nav-text {
     @extend %__nav-text;
-    // padding: 0 0 0 32px;
 
     &--link {
       @extend %__nav-text;

@@ -60,11 +60,21 @@
   justify-content: space-between;
   align-items: flex-end;
 }
-.page-footer__logo {
+.page-footer__logo --img {
   height: 40px;
+}
+@media screen and (max-width: 1280px) {
+  .page-footer__logo --img {
+    height: 32px;
+  }
 }
 .page-footer__nav {
   width: 50%;
+}
+@media screen and (max-width: 1280px) {
+  .page-footer__nav {
+    display: none;
+  }
 }
 .page-footer__nav-list {
   display: flex;
