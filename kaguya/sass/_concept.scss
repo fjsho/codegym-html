@@ -4,15 +4,14 @@ $img-path: "../img";
   width: 100%;
 
   &__main-visual {
-    background: url($img-path + "/home_top@2x.png") no-repeat center center;
-    background-size: cover;
+    background: url($img-path + "/home_top.png") no-repeat center center;
     height: 744px;
 
     &--wrapper {
       width: fit-content;
       background-color: #FFF;
       opacity: 0.8;
-      position: relative;
+      position:relative;
       top: 40%;
       padding: 32px;
     }
@@ -69,8 +68,7 @@ $img-path: "../img";
   }
 
   &__sub-visual {
-    background: url($img-path + "/concept@2x.png") no-repeat left center;
-    background-size: cover;
+    background: url($img-path + "/concept.png") no-repeat left center;
     margin: 0 28px;
     padding-left: 50%;
     height: 560px;
