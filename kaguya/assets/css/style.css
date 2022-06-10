@@ -328,6 +328,11 @@
 .contact__form-field {
   padding: 0 0 24px;
 }
+@media screen and (max-width: 1280px) {
+  .contact__form-field {
+    padding: 0 0 16px;
+  }
+}
 .contact__form-input {
   width: 38%;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -341,6 +346,15 @@
 .contact__form-input::placeholder {
   opacity: 0.4;
 }
+@media screen and (max-width: 1280px) {
+  .contact__form-input {
+    width: 87.5%;
+    font-size: 14px;
+    border-radius: 11px;
+    border-color: rgba(112, 112, 112, 0.4);
+    padding: 11px 17px 7px;
+  }
+}
 .contact__form-btn {
   background: #d1d1d1 0% 0% no-repeat padding-box;
   border: none;
@@ -350,6 +364,12 @@
   letter-spacing: 1.4px;
   color: #707070;
   padding: 7px 60px;
+}
+@media screen and (max-width: 1280px) {
+  .contact__form-btn {
+    border-radius: 30px;
+    padding: 12px 64px;
+  }
 }
 
 .recruit {

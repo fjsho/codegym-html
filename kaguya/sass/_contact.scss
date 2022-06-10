@@ -1,3 +1,5 @@
+@use 'mixin';
+
 .contact {
   font-family: Noto Sans;
 
@@ -6,6 +8,9 @@
 
   &__form-field {
     padding: 0 0 24px;
+    @include mixin.sp {
+      padding: 0 0 16px;
+    }
   }
 
   &__form-input {
@@ -20,6 +25,13 @@
     &::placeholder {
       opacity: 0.4;
     }
+    @include mixin.sp {
+      width: 87.5%;
+      font-size: 14px;
+      border-radius: 11px;
+      border-color: rgba(#707070, 0.4);
+      padding: 11px 17px 7px;
+    }
   }
 
   &__form-btn {
@@ -31,5 +43,9 @@
     letter-spacing: 1.4px;
     color: #707070;
     padding: 7px 60px;
+    @include mixin.sp {
+      border-radius: 30px;
+      padding: 12px 64px;
+    }
   }
 }
