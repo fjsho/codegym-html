@@ -145,10 +145,10 @@
 .concept__detail-wrapper {
   display: flex;
   flex-direction: row;
-  padding: 80px 0px;
+  padding: 80px 0 240px;
   margin: auto;
   width: 95%;
-  height: 720px;
+  height: 880px;
 }
 @media screen and (max-width: 1280px) {
   .concept__detail-wrapper {
@@ -260,7 +260,7 @@
 .section {
   color: #3b3b3b;
   text-align: center;
-  padding: 160px 0 80px;
+  padding: 0 24px 240px;
 }
 .section__header {
   font-size: 24px;
@@ -269,6 +269,11 @@
   font-weight: normal;
   letter-spacing: 2.4px;
   padding-bottom: 48px;
+}
+@media screen and (max-width: 1280px) {
+  .section__header {
+    padding-bottom: 32px;
+  }
 }
 .section__text {
   font-size: 15px;
@@ -295,6 +300,11 @@
   top: -2px;
   left: 6px;
 }
+@media screen and (max-width: 1280px) {
+  .section__link {
+    opacity: 1;
+  }
+}
 .section__btn {
   background: #d1d1d1 0% 0% no-repeat padding-box;
   border: none;
@@ -305,6 +315,11 @@
   letter-spacing: 1.8px;
   color: #707070;
   padding: 18px 64px;
+}
+@media screen and (max-width: 1280px) {
+  .section__btn {
+    padding: 18px 32px;
+  }
 }
 
 .contact {

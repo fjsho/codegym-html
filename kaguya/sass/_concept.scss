@@ -49,11 +49,11 @@ $img-path: "../img";
   &__detail-wrapper {
     display: flex;
     flex-direction: row;
-    padding: 80px 0px;
+    padding: 80px 0 240px;
     margin: auto;
     width: 95%;
     // 要素の高さをsub-vidualの背景画像サイズ（560*560）に合わせるための設定
-    height: 720px; // height - padding-top/bottom = 560px
+    height: 880px; // height - padding-top/bottom = 560pxになるように設定
 
     @include mixin.sp {
       flex-direction: column-reverse;
