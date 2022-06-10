@@ -1,53 +1,81 @@
+@use "mixin";
+
 $img-path: "../img";
 
 .concept {
   width: 100%;
 
   &__main-visual {
-    background: url($img-path + "/home_top.png") no-repeat center center;
+    background: url($img-path + "/home_top@2x.png") no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
     height: 744px;
+    @include mixin.sp {
+      height: 800px;
+    }
 
     &--wrapper {
       width: fit-content;
-      background-color: #FFF;
-      opacity: 0.8;
-      position:relative;
+      position: relative;
       top: 40%;
-      padding: 32px;
     }
 
     &--header {
+      // FIXME テキストの手前に背景のある空白を入れたいがspanのpaddingで対応すると文字の感覚がおかしくなる。代替案募集。
       display: inline;
-      padding-left: 56px;
       text-align: left;
       font-size: 53px;
       line-height: 73px;
       font-weight: normal;
       font-family: Noto Sans;
       letter-spacing: 2.65px;
-      color: #918F89;
+      color: #918f89;
+      @include mixin.sp {
+        font-size: 39px;
+        line-height: 37px;
+        letter-spacing: 1.95px;
+      }
+    }
+
+    &--br {
+      display: inline-block;
+      background-color: #fff;
+      opacity: 0.8;
+      padding: 16px;
+      margin-bottom: 16px;
     }
   }
 
   &__detail-wrapper {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    padding: 80px 60px;
-
+    padding: 80px 0px;
+    margin: auto;
+    width: 95%;
     // 要素の高さをsub-vidualの背景画像サイズ（560*560）に合わせるための設定
     height: 720px; // height - padding-top/bottom = 560px
+
+    @include mixin.sp {
+      flex-direction: column-reverse;
+    }
   }
 
   %__detail {
     text-align: left;
-    color: #3B3B3B;
+    color: #3b3b3b;
     font-weight: normal;
+    @include mixin.sp {
+      text-align: center;
+    }
   }
 
   &__detail {
     @extend %__detail;
-    padding: 240px 28px 90px ;
+    padding: 240px 28px 90px;
+
+    @include mixin.sp {
+      padding: 0 8.5px 24px;
+    }
 
     &--header {
       @extend %__detail;
@@ -56,6 +84,12 @@ $img-path: "../img";
       font-family: Noto Sans;
       letter-spacing: 2.5px;
       padding-bottom: 70px;
+      @include mixin.sp {
+        font-size: 21px;
+        line-height: 53px;
+        letter-spacing: 2.1px;
+        padding: 0 0 32px;
+      }
     }
 
     &--text {
@@ -65,12 +99,26 @@ $img-path: "../img";
       font-family: Noto Sans;
       letter-spacing: 0.36px;
     }
+
+    &--sp-br{
+      display: none;
+      @include mixin.sp {
+        display: inline;
+      }
+    }
   }
 
   &__sub-visual {
-    background: url($img-path + "/concept.png") no-repeat left center;
+    background: url($img-path + "/concept.png") no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
     margin: 0 28px;
     padding-left: 50%;
     height: 560px;
+    @include mixin.sp {
+      background-size: contain;
+      height: 264px;
+      margin: 0 24px;
+    }
   }
 }
