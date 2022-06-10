@@ -1,22 +1,33 @@
+@use 'mixin';
+
 .news {
 
   &__wrapper {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
-    padding: 0 32px 32px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 64px;
+    padding-bottom: 32px;
+    width: 95%;
+    margin: auto;
+    @include mixin.sp {
+      grid-template-columns: repeat(auto-fit, 272px);
+    }
   }
 
   &__image-wrapper {
     position: relative;
     background-color: #000;
-    margin: 0 32px;
   }
 
   &__image {
     height: 320px;
     width: 320px;
     opacity: .6;
+    @include mixin.sp {
+      height: 272px;
+      width: 272px;  
+    }
   }
 
   &__message {
@@ -28,5 +39,8 @@
     font-size: 17px;
     width: 100%;
     text-align: center;
+    @include mixin.sp {
+      font-size: 15px;
+    }
   }
 }
