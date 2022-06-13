@@ -23,19 +23,19 @@ $img-path: "../img";
     &--news {
       @extend %__catch;
       background: url($img-path + "/news_top@2x.png") no-repeat center center;
-      background-position: 96%;
+      background-position: 96%; //レスポンシブ時に中央に表示したい背景画像の位置
     }
 
     &--recruit {
       @extend %__catch;
       background: url($img-path + "/recruit_top@2x.png") no-repeat center center;
-      background-position: 90%;
+      background-position: 90%; //レスポンシブ時に中央に表示したい背景画像の位置
     }
 
     &--contact {
       @extend %__catch;
       background: url($img-path + "/contact_top@2x.png") no-repeat center center;
-      background-position: 85%;
+      background-position: 85%; //レスポンシブ時に中央に表示したい背景画像の位置
     }
   }
 
