@@ -16,7 +16,7 @@ gulp.task('css', () => {
 });
 
 gulp.task('sass', function() {
-  return gulp.src('./sass/style.scss')
+  return gulp.src('./sass/style.scss') // FIXME:複数ファイルにそれぞれ指定する必要がある。
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
