@@ -1,12 +1,17 @@
+@use 'mixin';
+
 .recruit {
   font-family: Noto Sans;
 
   &__table {
-    width: 640px;
+    width: 50%;
     margin: 0 auto;
     border: 1px solid #707070;
     border-collapse:collapse;
     border-radius: 4px;
+    @include mixin.sp {
+      width: 100%;
+    }
   }
 
   &__table-row {
@@ -20,27 +25,42 @@
     text-align: center;
     font: normal normal normal 16px/22px Noto Sans;
     color: #3B3B3B;
+    @include mixin.sp {
+      font: normal normal normal 14px/19px Noto Sans;
+    }
   }
 
   &__table-data {
     text-align: left;
     border: 1px solid #707070;
     padding: 16px 48px;
+    @include mixin.sp {
+      padding: 16px 4px 16px 24px;
+    }
 
     &--header {
       font: normal normal normal 16px/24px Noto Sans;
       padding-bottom: 8px;
       color: #3B3B3B;
+      @include mixin.sp {
+        font: normal normal normal 15px/20px Noto Sans;
+      }  
     }
 
     &--text {
       font: normal normal normal 14px/21px Noto Sans;
       color: #3B3B3B;
+      @include mixin.sp {
+        font: normal normal normal 13px/23px Noto Sans;
+      }
     }
   }
 
   &__table-list {
     list-style-type: "・";
     padding-left: 20px;
+    @include mixin.sp {
+      padding-left: 10px;
+    }
   }
 }
