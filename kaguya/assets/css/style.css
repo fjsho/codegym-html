@@ -461,13 +461,16 @@
     font: normal normal normal 13px/23px Noto Sans;
   }
 }
-.recruit__table-list {
-  list-style-type: "・";
-  padding-left: 20px;
+.recruit__table-data--list {
+  font: normal normal normal 14px/21px Noto Sans;
+  color: #3B3B3B;
+}
+.recruit__table-data--list:before {
+  content: "・";
 }
 @media screen and (max-width: 1280px) {
-  .recruit__table-list {
-    padding-left: 10px;
+  .recruit__table-data--list {
+    font: normal normal normal 13px/23px Noto Sans;
   }
 }
 

@@ -54,13 +54,16 @@
         font: normal normal normal 13px/23px Noto Sans;
       }
     }
-  }
 
-  &__table-list {
-    list-style-type: "・";
-    padding-left: 20px;
-    @include mixin.sp {
-      padding-left: 10px;
+    &--list {
+      font: normal normal normal 14px/21px Noto Sans;
+      color: #3B3B3B;
+      &:before {
+        content: "・";
+      }
+      @include mixin.sp {
+        font: normal normal normal 13px/23px Noto Sans;
+      }
     }
   }
 }
