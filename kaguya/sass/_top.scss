@@ -1,13 +1,20 @@
+@use 'mixin';
+
 $img-path: "../img";
 
 .top {
   width: 100%;
+  padding-bottom: 160px;
 
   %__catch {
     background-size: cover;
     padding-top: 38%; //背景画像のアスペクト比(画像の高さ/画像の幅*100)
     min-height: 456px; //背景画像の元の高さ
     box-sizing: border-box;
+
+    @include mixin.sp {
+      min-height: 704px; //表示したい画像サイズ
+    }
   }
 
   &__catch {
@@ -39,6 +46,14 @@ $img-path: "../img";
     font-weight: normal;
     font-family: Noto Sans;
     letter-spacing: 3px;
+    @include mixin.sp {
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+      font-size: 25px;
+      letter-spacing: 2.5px;      
+    }
   }
 
   &__header {
