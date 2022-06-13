@@ -28,6 +28,7 @@ $img-path: "../img";
     &--recruit {
       @extend %__catch;
       background: url($img-path + "/recruit_top@2x.png") no-repeat center center;
+      background-position: 90% 10%;
     }
 
     &--contact {
@@ -68,6 +69,9 @@ $img-path: "../img";
     &--recruit {
       @extend %__header;
       color: #918F89;
+      @include mixin.sp {
+        color: #3B3B3B;
+      }
     }
 
     &--contact {

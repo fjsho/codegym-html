@@ -238,9 +238,11 @@
 }
 .top__catch--recruit {
   background: url("../img/recruit_top@2x.png") no-repeat center center;
+  background-position: 90% 10%;
 }
 .top__catch--contact {
   background: url("../img/contact_top@2x.png") no-repeat center center;
+  background-position: 85%;
 }
 .top .top__header--contact, .top .top__header--recruit, .top .top__header--news, .top .top__header {
   position: absolute;
@@ -268,6 +270,11 @@
 }
 .top__header--recruit {
   color: #918F89;
+}
+@media screen and (max-width: 1280px) {
+  .top__header--recruit {
+    color: #3B3B3B;
+  }
 }
 .top__header--contact {
   color: #FCFCFC;
