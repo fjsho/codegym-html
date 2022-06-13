@@ -235,10 +235,11 @@
 }
 .top__catch--news {
   background: url("../img/news_top@2x.png") no-repeat center center;
+  background-position: 96%;
 }
 .top__catch--recruit {
   background: url("../img/recruit_top@2x.png") no-repeat center center;
-  background-position: 90% 10%;
+  background-position: 90%;
 }
 .top__catch--contact {
   background: url("../img/contact_top@2x.png") no-repeat center center;
@@ -267,6 +268,11 @@
 }
 .top__header--news {
   color: #918F89;
+}
+@media screen and (max-width: 1280px) {
+  .top__header--news {
+    color: #3B3B3B;
+  }
 }
 .top__header--recruit {
   color: #918F89;

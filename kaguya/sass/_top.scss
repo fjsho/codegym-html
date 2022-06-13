@@ -23,12 +23,13 @@ $img-path: "../img";
     &--news {
       @extend %__catch;
       background: url($img-path + "/news_top@2x.png") no-repeat center center;
+      background-position: 96%;
     }
 
     &--recruit {
       @extend %__catch;
       background: url($img-path + "/recruit_top@2x.png") no-repeat center center;
-      background-position: 90% 10%;
+      background-position: 90%;
     }
 
     &--contact {
@@ -64,6 +65,9 @@ $img-path: "../img";
     &--news {
       @extend %__header;
       color: #918F89;
+      @include mixin.sp {
+        color: #3B3B3B;
+      }
     }
 
     &--recruit {
