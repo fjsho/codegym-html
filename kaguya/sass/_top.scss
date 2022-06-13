@@ -3,28 +3,28 @@ $img-path: "../img";
 .top {
   width: 100%;
 
-  %__chach {
+  %__catch {
     background-size: cover;
     padding-top: 38%; //背景画像のアスペクト比(画像の高さ/画像の幅*100)
     min-height: 456px; //背景画像の元の高さ
     box-sizing: border-box;
   }
 
-  &__chach {
-    @extend %__chach;
+  &__catch {
+    @extend %__catch;
 
     &--news {
-      @extend %__chach;
+      @extend %__catch;
       background: url($img-path + "/news_top@2x.png") no-repeat center center;
     }
 
     &--recruit {
-      @extend %__chach;
+      @extend %__catch;
       background: url($img-path + "/recruit_top@2x.png") no-repeat center center;
     }
 
     &--contact {
-      @extend %__chach;
+      @extend %__catch;
       background: url($img-path + "/contact_top@2x.png") no-repeat center center;
     }
   }
