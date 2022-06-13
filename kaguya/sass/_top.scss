@@ -33,6 +33,7 @@ $img-path: "../img";
     &--contact {
       @extend %__catch;
       background: url($img-path + "/contact_top@2x.png") no-repeat center center;
+      background-position: 85%;
     }
   }
 
