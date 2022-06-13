@@ -1,0 +1,51 @@
+@use 'mixin';
+
+.contact {
+  font-family: Noto Sans;
+
+  &__form {
+  }
+
+  &__form-field {
+    padding: 0 0 24px;
+    @include mixin.sp {
+      padding: 0 0 16px;
+    }
+  }
+
+  &__form-input {
+    width: 38%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 16px;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    padding: 10px 16px;
+    &::placeholder {
+      opacity: 0.4;
+    }
+    @include mixin.sp {
+      width: 87.5%;
+      font-size: 14px;
+      border-radius: 11px;
+      border-color: rgba(#707070, 0.4);
+      padding: 11px 17px 7px;
+    }
+  }
+
+  &__form-btn {
+    background: #d1d1d1 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    color: #707070;
+    padding: 7px 60px;
+    @include mixin.sp {
+      border-radius: 30px;
+      padding: 12px 64px;
+    }
+  }
+}

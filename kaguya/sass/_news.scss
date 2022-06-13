@@ -1,0 +1,46 @@
+@use 'mixin';
+
+.news {
+
+  &__wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 64px;
+    padding-bottom: 32px;
+    width: 95%;
+    margin: auto;
+    @include mixin.sp {
+      grid-template-columns: repeat(auto-fit, 272px);
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    background-color: #000;
+  }
+
+  &__image {
+    height: 320px;
+    width: 320px;
+    opacity: .6;
+    @include mixin.sp {
+      height: 272px;
+      width: 272px;  
+    }
+  }
+
+  &__message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    @include mixin.sp {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT | HTMLCSS.code</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__logo">
+          <a href="./index.html">
+            <picture>
+              <source srcset="./assets/img/logo_footer.png" media="(max-width: 1280px)" >
+              <img src="./assets/img/logo_header.png" alt="HTMLCSS" class="page-header__logo--img"/>
+            </picture>
+          </a>
+        </h1>
+        <nav class="page-header__nav">
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-text">
+              <a href="./index.html" class="page-header__nav-text--link">
+                HOME
+              </a>
+            </li>
+            <li class="page-header__nav-text">
+              <a href="./news.html" class="page-header__nav-text--link">
+                NEWS
+              </a>
+            </li>
+            <li class="page-header__nav-text">
+              <a href="./recruit.html" class="page-header__nav-text--link">
+                RECRUIT
+              </a>
+            </li>
+            <li class="page-header__nav-text">
+              CONTACT
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="top">
+        <div class="top__catch--contact">
+          <h2 class="top__header--contact">CONTACT</h2>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section__header">CONTACT</h2>
+        <div class="contact">
+          <form action="" method="POST" name="contact" class="contact__form">
+            <div class="contact__form-field">
+              <input type="text" name="name" id="name" placeholder="お名前" class="contact__form-input"/>
+            </div>
+            <div class="contact__form-field">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="メールアドレス"
+                class="contact__form-input"
+              />
+            </div>
+            <div class="contact__form-field">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="お問い合わせ内容"
+                class="contact__form-input"
+              ></textarea>
+            </div>
+            <button type="submit" class="contact__form-btn">
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div  class="page-footer__logo">
+          <a href="./index.html">
+            <img src="./assets/img/logo_footer.png" alt="HTMLCSS" />
+          </a>
+        </div>
+        <nav class="page-footer__nav">
+          <ul class="page-footer__nav-list">
+            <li class="page-footer__nav-text">
+              <a href="./index.html" class="page-footer__nav-text--link">
+                HOME
+              </a>
+            </li>
+            <li class="page-footer__nav-text">
+              <a href="./news.html" class="page-footer__nav-text--link">
+                NEWS
+              </a>
+            </li>
+            <li class="page-footer__nav-text">
+              <a href="./recruit.html" class="page-footer__nav-text--link">
+                RECRUIT
+              </a>
+            </li>
+            <li class="page-footer__nav-text">
+              CONTACT
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-footer__copyright">
+        <p><small>&copy;HTMLCSS.code</small></p>
+      </div>
+    </footer>
+  </body>
+</html>
